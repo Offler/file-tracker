@@ -20,9 +20,9 @@ A rough idea of the API/events.
 	.on( "error", listener );	
 	
 	tracker.trackAndScan( [
-		{ dir: "src/", match: "*.js" },
-		{ dir: "other-src/", match: "*.js" }
-		{ dir: "extra-src/", match: "*.js" } 
+		{ dir: "src", match: ".*\.js" },
+		{ dir: "other-src", match: ".*\.js" },
+		{ dir: "extra-src", match: ".*\.js" } 
 	] ); // This triggers a scan and all files founds will raise a "fileAdded" event.
 	
 	... Some time later ...
